@@ -1,0 +1,26 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.log
+.vs/
+.vscode/
+
+# Next.js
+.next/
+out/
+node_modules/
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+
+# General
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
