@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # API de Facturas - Backend
 
 API REST desarrollada en .NET 10 / C# para la gestión de consultas de facturas.
@@ -238,3 +239,7 @@ Adicionalmente, implementaría Role-Based Access Control (RBAC) para controlar q
 Para integrar con un ERP corporativo donde las consultas son pesadas y evitar tiempos de espera excesivos en el frontend, implementaría una arquitectura de caché multinivel combinada con procesamiento asíncrono. Primero, utilizaría Redis como caché distribuida en .NET para almacenar resultados de consultas frecuentes con TTL (Time To Live) inteligente basado en la volatilidad de los datos. Para consultas en tiempo real no cacheables, implementaría el patrón CQRS (Command Query Responsibility Segregation) con una base de datos de lectura optimizada (read model) sincronizada desde el ERP mediante eventos.
 
 Segundo, para consultas extremadamente pesadas, usaría procesamiento asíncrono con colas de mensajes (Azure Service Bus o RabbitMQ): el frontend solicita el reporte, recibe un job ID inmediatamente, y luego consulta el estado vía polling o WebSockets hasta que esté listo. En .NET implementaría esto con Hangfire o Azure Functions. Además, aplicaría paginación server-side, lazy loading, y compresión Gzip/Brotli para reducir payload. En el frontend Next.js, utilizaría Suspense boundaries y skeleton screens para mejorar la percepción de velocidad, y consideraría Incremental Static Regeneration (ISR) para datos que no cambian constantemente.
+=======
+# PruebaAlival
+Repositorio para alojar el back y Front de la prueba tecnica realizada para la empresa Alimentos del Valle.
+>>>>>>> 3c27344c963f769dffc9c74c9b89b4766ead8681
